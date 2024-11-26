@@ -5,7 +5,7 @@ USERID=$(id -u)
 
 if [ $USERID -ne 0 ]
 then
-    echo "Please run this script with root priveleges"
+    echo "Please run this script with root privileges"
     exit 1
 fi
 
@@ -21,6 +21,7 @@ then
         exit 1
     else
         echo "Git installation is success"
+    fi
 else
     echo "Git is already installed, nothing to do.."
 fi
